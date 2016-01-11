@@ -1,0 +1,4 @@
+--DELETE FROM UserGroups
+--DELETE FROM Employees
+--DELETE FROM Departments
+--DELETE FROM Sites
