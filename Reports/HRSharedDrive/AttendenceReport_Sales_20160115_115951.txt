@@ -1,0 +1,6 @@
+Department : Sales
+Date : 15 January 2016
+==========================================
+Employee [104] - Prsent on 2016-01-15. Name : Rchu Sanghvi
+Employee [115] - Prsent on 2016-01-15. Name : Moi Che Sung
+Employee [114] - Absent on 2016-01-15. Name : Rudy Chapp

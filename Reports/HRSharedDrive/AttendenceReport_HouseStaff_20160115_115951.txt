@@ -1,0 +1,7 @@
+Department : HouseStaff
+Date : 15 January 2016
+==========================================
+Employee [107] - Prsent on 2016-01-15. Name : Tom Hussey
+Employee [110] - Prsent on 2016-01-15. Name : Emma Ross
+Employee [113] - Prsent on 2016-01-15. Name : Swapan Talukdar
+Employee [109] - Absent on 2016-01-15. Name : JK Selvaraj

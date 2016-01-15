@@ -1,0 +1,10 @@
+Department : Engineering
+Date : 15 January 2016
+==========================================
+Employee [102] - Prsent on 2016-01-15. Name : Eric Lippert
+Employee [100] - Prsent on 2016-01-15. Name : Brad Green
+Employee [103] - Prsent on 2016-01-15. Name : Phil Haacked
+Employee [105] - Prsent on 2016-01-15. Name : Jon Skeet
+Employee [106] - Prsent on 2016-01-15. Name : Arghya C
+Employee [112] - Prsent on 2016-01-15. Name : Amanda Simpson
+Employee [116] - Prsent on 2016-01-15. Name : Joe Albahari

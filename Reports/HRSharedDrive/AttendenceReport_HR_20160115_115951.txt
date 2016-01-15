@@ -1,0 +1,6 @@
+Department : HR
+Date : 15 January 2016
+==========================================
+Employee [111] - Prsent on 2016-01-15. Name : Madhu Kumari
+Employee [101] - Absent on 2016-01-15. Name : Shally Johnson
+Employee [108] - Absent on 2016-01-15. Name : Mohammed Ali

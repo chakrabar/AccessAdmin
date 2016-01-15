@@ -1,0 +1,17 @@
+Department : HouseStaff
+Date : 15 January 2016
+Manager : Swapan Talukdar
+Email : swapan@co.com
+==========================================
+AccessEntry - access point [Gate 3] of facility [Annexe I] : Employee [Tom Hussey], at 2016-01-15 11:59:51
+AccessExit - access point [Gate 3] of facility [Annexe I] : Employee [Tom Hussey], at 2016-01-15 11:59:51
+AccessEntry - access point [Gate 3] of facility [Annexe I] : Employee [Tom Hussey], at 2016-01-15 11:59:51
+AccessEntry - access point [Hub Main] of facility [Dev Hub] : Employee [Emma Ross], at 2016-01-15 11:59:51
+AccessExit - access point [Hub Main] of facility [Dev Hub] : Employee [Emma Ross], at 2016-01-15 11:59:51
+AccessEntry - access point [Hub Main] of facility [Dev Hub] : Employee [Emma Ross], at 2016-01-15 11:59:51
+AccessDenied - access point [Hub Side] of facility [Dev Hub] : Employee [Emma Ross], at 2016-01-15 11:59:51
+AccessEntry - access point [Gate 2] of facility [Annexe I] : Employee [Swapan Talukdar], at 2016-01-15 11:59:51
+AccessExit - access point [Gate 2] of facility [Annexe I] : Employee [Swapan Talukdar], at 2016-01-15 11:59:51
+AccessEntry - access point [Gate 2] of facility [Annexe I] : Employee [Swapan Talukdar], at 2016-01-15 11:59:51
+AccessExit - access point [Gate 3] of facility [Annexe I] : Employee [Swapan Talukdar], at 2016-01-15 11:59:51
+AccessEntry - access point [Goods] of facility [Inventory I] : Employee [Tom Hussey], at 2016-01-15 11:59:51

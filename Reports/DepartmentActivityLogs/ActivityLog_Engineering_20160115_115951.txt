@@ -1,0 +1,26 @@
+Department : Engineering
+Date : 15 January 2016
+Manager : Phil Haacked
+Email : haack@co.com
+==========================================
+AccessEntry - access point [Hub Main] of facility [Dev Hub] : Employee [Eric Lippert], at 2016-01-15 11:59:51
+AccessExit - access point [Hub Main] of facility [Dev Hub] : Employee [Eric Lippert], at 2016-01-15 11:59:51
+AccessDenied - access point [Goods] of facility [Inventory I] : Employee [Eric Lippert], at 2016-01-15 11:59:51
+AccessEntry - access point [Hub Main] of facility [Dev Hub] : Employee [Brad Green], at 2016-01-15 11:59:51
+AccessExit - access point [Hub Side] of facility [Dev Hub] : Employee [Brad Green], at 2016-01-15 11:59:51
+AccessEntry - access point [Hub Main] of facility [Dev Hub] : Employee [Phil Haacked], at 2016-01-15 11:59:51
+AccessExit - access point [Hub Main] of facility [Dev Hub] : Employee [Phil Haacked], at 2016-01-15 11:59:51
+AccessEntry - access point [Gate 1] of facility [Annexe I] : Employee [Phil Haacked], at 2016-01-15 11:59:51
+AccessExit - access point [Gate 2] of facility [Annexe I] : Employee [Phil Haacked], at 2016-01-15 11:59:51
+AccessDenied - access point [Front] of facility [Inventory I] : Employee [Jon Skeet], at 2016-01-15 11:59:51
+AccessDenied - access point [Goods] of facility [Inventory I] : Employee [Jon Skeet], at 2016-01-15 11:59:51
+AccessExit - access point [Gate 3] of facility [Annexe I] : Employee [Arghya C], at 2016-01-15 11:59:51
+AccessDenied - access point [Gate 3] of facility [Annexe I] : Employee [Amanda Simpson], at 2016-01-15 11:59:51
+AccessDenied - access point [Gate 3] of facility [Annexe I] : Employee [Amanda Simpson], at 2016-01-15 11:59:51
+AccessDenied - access point [Gate 3] of facility [Annexe I] : Employee [Amanda Simpson], at 2016-01-15 11:59:51
+AccessDenied - access point [Gate 3] of facility [Annexe I] : Employee [Amanda Simpson], at 2016-01-15 11:59:51
+AccessDenied - access point [Gate 3] of facility [Annexe I] : Employee [Amanda Simpson], at 2016-01-15 11:59:51
+AccessExit - access point [Gate 1] of facility [Annexe I] : Employee [Joe Albahari], at 2016-01-15 11:59:51
+AccessEntry - access point [Gate 3] of facility [Annexe I] : Employee [Joe Albahari], at 2016-01-15 11:59:51
+AccessDenied - access point [Front] of facility [Inventory I] : Employee [Arghya C], at 2016-01-15 11:59:51
+AccessDenied - access point [Front] of facility [Inventory I] : Employee [Arghya C], at 2016-01-15 11:59:51

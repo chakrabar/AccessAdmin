@@ -1,0 +1,9 @@
+Department : Sales
+Date : 15 January 2016
+Manager : Moi Che Sung
+Email : mcsung@co.com
+==========================================
+AccessEntry - access point [Front] of facility [Inventory I] : Employee [Rchu Sanghvi], at 2016-01-15 11:59:51
+AccessExit - access point [Front] of facility [Inventory I] : Employee [Rchu Sanghvi], at 2016-01-15 11:59:51
+AccessEntry - access point [Hub Side] of facility [Dev Hub] : Employee [Moi Che Sung], at 2016-01-15 11:59:51
+AccessExit - access point [Hub Side] of facility [Dev Hub] : Employee [Moi Che Sung], at 2016-01-15 11:59:51
