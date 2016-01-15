@@ -4,6 +4,7 @@
 **/obj/**
 packages/
 *.v12.suo
+Readme.docx
 
 # =========================
 # Git AutoCreated ignores v
