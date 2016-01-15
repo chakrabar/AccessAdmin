@@ -4,8 +4,9 @@
 **/obj/**
 packages/
 *.v12.suo
+# ==== proj specifics =====
 Readme.docx
-
+Reports/
 # =========================
 # Git AutoCreated ignores v
 # =========================
