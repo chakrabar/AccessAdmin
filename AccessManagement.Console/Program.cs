@@ -49,7 +49,7 @@ namespace AccessManagement.Console
             {
                 switch (userInput)
                 {
-                    case "I":                        
+                    case "I":
                         LoadBaseData();
                         break;
                     case "R":
@@ -57,6 +57,9 @@ namespace AccessManagement.Console
                         break;
                     case "L":
                         ProcessLogin();
+                        break;
+                    case "O":
+                        ProcessLogout();
                         break;
                     case "N":
                         System.Console.WriteLine("Looking for access violation..." + MainMenu.GetNewLine());
@@ -91,7 +94,7 @@ namespace AccessManagement.Console
         {
             System.Console.Write("Enter email : ");
             var usr = System.Console.ReadLine();
-            System.Console.Write("Enter password : ");            
+            System.Console.Write("Enter password : ");
             var pwd = System.Console.ReadLine();
 
             var userDetails = _UserRepository.IsValidUser(usr, pwd);
@@ -112,6 +115,18 @@ namespace AccessManagement.Console
                 System.Console.WriteLine(MainMenu.GetNewLine() + "Incorrect login");
             }
             System.Console.ResetColor();
+        }
+
+        private static void ProcessLogout()
+        {
+            if (!IsUserLoggedIn)
+                return;
+            IsUserLoggedIn = false;
+            UserName = string.Empty;
+            _userId = 0;
+            IsUserManager = false;
+            _department = string.Empty;
+            System.Console.WriteLine("Logged out");
         }
 
         private static void ProcessManager(IUserRepository userRepo)
@@ -160,6 +175,6 @@ namespace AccessManagement.Console
             }
             else
                 IsUserManager = false;
-        }        
+        }
     }
 }

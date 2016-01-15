@@ -37,7 +37,8 @@ namespace AccessManagement.Console.Menus
             ShowStartupMessage();
             System.Console.Write("You can do a [1] Initial data load [2] Daily report [3] Access violation notification [4] Login");
             System.Console.Write("Press `Enter` without input to exit." + GetNewLine());
-            System.Console.Write("\tPress 'I' for initial load\n\tPress 'R' for daily report\n\tPress 'N' for access notification\n\tPress 'L' for login\n\tEnter choice (I/R/N/L) : ");
+            var options = string.Format("\tPress 'I' for initial load\n\tPress 'R' for daily report\n\tPress 'N' for access notification\n\t{0}\n\tEnter choice (I/R/N/{1}) : ", Program.IsUserLoggedIn ? "Press 'O' for logout" : "Press 'L' for login", Program.IsUserLoggedIn ? "O" : "L");
+            System.Console.Write(options);
             var userInput = System.Console.ReadLine();
             System.Console.WriteLine(GetNewLine());
             return userInput.Trim().ToUpper();
