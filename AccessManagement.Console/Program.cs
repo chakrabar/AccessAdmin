@@ -1,6 +1,7 @@
 ﻿using AccessManagement.Application.CommandStack;
 using AccessManagement.Application.ReportGenerators;
 using AccessManagement.Console.Menus;
+using AccessManagement.Console.Utils;
 using AccessManagement.Domain.Entities;
 using AccessManagement.Infrastructure;
 using AccessManagement.Repository;
@@ -94,8 +95,10 @@ namespace AccessManagement.Console
         {
             System.Console.Write("Enter email : ");
             var usr = System.Console.ReadLine();
-            System.Console.Write("Enter password : ");
-            var pwd = System.Console.ReadLine();
+            //System.Console.Write("Enter password : ");
+            //var pwd = System.Console.ReadLine();
+
+            var pwd = PasswordUtil.ProcessPassword("Enter password : ");
 
             var userDetails = _UserRepository.IsValidUser(usr, pwd);
             if (!userDetails.Equals(new KeyValuePair<int, string>()))
@@ -103,9 +106,8 @@ namespace AccessManagement.Console
                 IsUserLoggedIn = true;
                 UserName = userDetails.Value;
                 _userId = userDetails.Key;
-                //System.Console.WriteLine(MainMenu.GetNewLine() + (_isUserLoggedIn ? "Logged in as " + _userName : "Incorrect login"));
                 System.Console.ForegroundColor = System.ConsoleColor.Green;
-                System.Console.WriteLine(MainMenu.GetNewLine() + "Logged in as : " + UserName);
+                System.Console.WriteLine(MainMenu.GetNewLine(2) + "Logged in as : " + UserName);
 
                 ProcessManager(_UserRepository);
             }
