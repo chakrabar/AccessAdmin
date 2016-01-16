@@ -17,8 +17,8 @@ namespace AccessManagement.Console.Utils
             while (next.Key != ConsoleKey.Enter)
             {
                 if (next.Key == ConsoleKey.LeftArrow || next.Key == ConsoleKey.RightArrow)
-                    continue;
-                if (next.Key == ConsoleKey.Backspace)
+                { } //arrow not allowed in hidden password
+                else if (next.Key == ConsoleKey.Backspace)
                 {
                     if (passwordLength != 0)
                     {
