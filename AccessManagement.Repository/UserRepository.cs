@@ -8,8 +8,8 @@ namespace AccessManagement.Repository
     {
         public KeyValuePair<int, string> IsValidUser(string email, string password)
         {
-            string qry = @"SELECT Name, Id FROM Employees WHERE Email = @email AND [Password] = @password";
-            //var employees = new List<Employee>();
+            string qry = @"SELECT Name, Id FROM Employees WHERE LOWER(Email) = LOWER(@email) AND [Password] = @password COLLATE Latin1_General_CS_AS";
+
             using (var conn = SqlHelper.GetConnection())
             {
                 SqlCommand cmd = CommandFactory.CreateSimpleTextCommand(conn, qry);
