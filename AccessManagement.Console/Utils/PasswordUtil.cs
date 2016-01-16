@@ -20,16 +20,18 @@ namespace AccessManagement.Console.Utils
                     continue;
                 if (next.Key == ConsoleKey.Backspace)
                 {
-                    if (passwordLength == 0)
-                        continue;
-                    passwordLength--;
-                    password.Remove(password.Length - 1, 1);
+                    if (passwordLength != 0)
+                    {
+                        passwordLength--;
+                        password.Remove(password.Length - 1, 1);
+                    }                    
                 }
                 else
                 {
                     passwordLength++;
                     password.Append(next.KeyChar);
                 }
+                System.Console.Write("\r" + new string(' ', System.Console.BufferWidth - 1)); //clean current line
                 System.Console.Write("\r" + passwordPrompt + new string(hideChar, passwordLength));
                 next = System.Console.ReadKey();
             }
