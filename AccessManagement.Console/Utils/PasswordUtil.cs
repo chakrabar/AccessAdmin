@@ -16,9 +16,21 @@ namespace AccessManagement.Console.Utils
             var next = System.Console.ReadKey();
             while (next.Key != ConsoleKey.Enter)
             {
-                passwordLength++;
-                password.Append(next.KeyChar);
-                System.Console.Write("\r" + passwordPrompt + new string(Enumerable.Repeat(hideChar, passwordLength).ToArray()));
+                if (next.Key == ConsoleKey.LeftArrow || next.Key == ConsoleKey.RightArrow)
+                    continue;
+                if (next.Key == ConsoleKey.Backspace)
+                {
+                    if (passwordLength == 0)
+                        continue;
+                    passwordLength--;
+                    password.Remove(password.Length - 1, 1);
+                }
+                else
+                {
+                    passwordLength++;
+                    password.Append(next.KeyChar);
+                }
+                System.Console.Write("\r" + passwordPrompt + new string(hideChar, passwordLength));
                 next = System.Console.ReadKey();
             }
 
