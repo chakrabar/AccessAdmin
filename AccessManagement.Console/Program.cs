@@ -95,9 +95,6 @@ namespace AccessManagement.Console
         {
             System.Console.Write("Enter email : ");
             var usr = System.Console.ReadLine();
-            //System.Console.Write("Enter password : ");
-            //var pwd = System.Console.ReadLine();
-
             var pwd = PasswordUtil.ProcessPassword("Enter password : ");
 
             var userDetails = _UserRepository.IsValidUser(usr, pwd);

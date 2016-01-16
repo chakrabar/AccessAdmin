@@ -6,7 +6,7 @@ namespace AccessManagement.Console.Utils
 {
     class PasswordUtil
     {
-        internal static string ProcessPassword(string passwordPrompt)
+        internal static string ProcessPassword(string passwordPrompt = "Enter password : ", char hideChar = '*')
         {
             var password = new StringBuilder();
             var passwordLength = 0;
@@ -18,7 +18,7 @@ namespace AccessManagement.Console.Utils
             {
                 passwordLength++;
                 password.Append(next.KeyChar);
-                System.Console.Write("\r" + passwordPrompt + new string(Enumerable.Repeat('*', passwordLength).ToArray()));
+                System.Console.Write("\r" + passwordPrompt + new string(Enumerable.Repeat(hideChar, passwordLength).ToArray()));
                 next = System.Console.ReadKey();
             }
 
